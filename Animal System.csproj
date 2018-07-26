@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4BF70A99-B210-4328-9F09-F1B2F3B0FE02}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Animal_System</RootNamespace>
+    <AssemblyName>Animal System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualC" />
+    <Reference Include="mysql.data, Version=6.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\usuario\Documents\SEI\WindowsFormsApp2\bin\Debug\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animal_consultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Animal_consultar.Designer.cs">
+      <DependentUpon>Animal_consultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastrar Marca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastrar Marca.Designer.cs">
+      <DependentUpon>Cadastrar Marca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastrarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastrarCategoria.Designer.cs">
+      <DependentUpon>cadastrarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastrar_animal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastrar_animal.Designer.cs">
+      <DependentUpon>Cadastrar_animal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastrar_contas_a_Pagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastrar_contas_a_Pagar.Designer.cs">
+      <DependentUpon>Cadastrar_contas_a_Pagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastrar_Especie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastrar_Especie.Designer.cs">
+      <DependentUpon>Cadastrar_Especie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastrar_tamanho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastrar_tamanho.Designer.cs">
+      <DependentUpon>cadastrar_tamanho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadcentrodecusto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadcentrodecusto.Designer.cs">
+      <DependentUpon>Cadcentrodecusto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cad_peso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cad_peso.Designer.cs">
+      <DependentUpon>cad_peso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calendario.Designer.cs">
+      <DependentUpon>calendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cardapio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cardapio.Designer.cs">
+      <DependentUpon>Cardapio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categoria.Designer.cs">
+      <DependentUpon>Categoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Centrodecusto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Centrodecusto.Designer.cs">
+      <DependentUpon>Centrodecusto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultar_saida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar_saida.Designer.cs">
+      <DependentUpon>Consultar_saida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta_entrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta_entrar.Designer.cs">
+      <DependentUpon>Consulta_entrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contas_a_pagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contas_a_pagar.Designer.cs">
+      <DependentUpon>Contas_a_pagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Especie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Especie.Designer.cs">
+      <DependentUpon>Especie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estoque.Designer.cs">
+      <DependentUpon>Estoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estoque_entrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estoque_entrada.Designer.cs">
+      <DependentUpon>Estoque_entrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedor.Designer.cs">
+      <DependentUpon>Fornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_alimentação.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_alimentação.Designer.cs">
+      <DependentUpon>frm_alimentação.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cardapio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cardapio.Designer.cs">
+      <DependentUpon>frm_cardapio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConsultaAlimentacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConsultaAlimentacao.Designer.cs">
+      <DependentUpon>Frm_ConsultaAlimentacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMG.Designer.cs">
+      <DependentUpon>IMG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="img2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="img2.Designer.cs">
+      <DependentUpon>img2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="img3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="img3.Designer.cs">
+      <DependentUpon>img3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="incluir_produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="incluir_produto.Designer.cs">
+      <DependentUpon>incluir_produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marca.Designer.cs">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_administrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_administrador.Designer.cs">
+      <DependentUpon>Menu_administrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="novo_fornecedor .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="novo_fornecedor .Designer.cs">
+      <DependentUpon>novo_fornecedor .cs</DependentUpon>
+    </Compile>
+    <Compile Include="OracleDataAdapter.cs" />
+    <Compile Include="Pagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagar.Designer.cs">
+      <DependentUpon>Pagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parcelamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parcelamento.Designer.cs">
+      <DependentUpon>Parcelamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedido_de_compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedido_de_compra.Designer.cs">
+      <DependentUpon>Pedido_de_compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Peso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Peso.Designer.cs">
+      <DependentUpon>Peso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisa_plano_de_contas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisa_plano_de_contas.Designer.cs">
+      <DependentUpon>Pesquisa_plano_de_contas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanoDeContas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanoDeContas.Designer.cs">
+      <DependentUpon>PlanoDeContas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planodecontas_consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planodecontas_consulta.Designer.cs">
+      <DependentUpon>Planodecontas_consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="produtos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="produtos.Designer.cs">
+      <DependentUpon>produtos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recibo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recibo.Designer.cs">
+      <DependentUpon>Recibo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="saida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saida.Designer.cs">
+      <DependentUpon>saida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.Designer.cs">
+      <DependentUpon>splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tamanho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tamanho.Designer.cs">
+      <DependentUpon>Tamanho.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Animal_consultar.resx">
+      <DependentUpon>Animal_consultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastrar Marca.resx">
+      <DependentUpon>Cadastrar Marca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastrarCategoria.resx">
+      <DependentUpon>cadastrarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastrar_animal.resx">
+      <DependentUpon>Cadastrar_animal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastrar_contas_a_Pagar.resx">
+      <DependentUpon>Cadastrar_contas_a_Pagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastrar_Especie.resx">
+      <DependentUpon>Cadastrar_Especie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastrar_tamanho.resx">
+      <DependentUpon>cadastrar_tamanho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadcentrodecusto.resx">
+      <DependentUpon>Cadcentrodecusto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cad_peso.resx">
+      <DependentUpon>cad_peso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calendario.resx">
+      <DependentUpon>calendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cardapio.resx">
+      <DependentUpon>Cardapio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categoria.resx">
+      <DependentUpon>Categoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Centrodecusto.resx">
+      <DependentUpon>Centrodecusto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar_saida.resx">
+      <DependentUpon>Consultar_saida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta_entrar.resx">
+      <DependentUpon>Consulta_entrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contas_a_pagar.resx">
+      <DependentUpon>Contas_a_pagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Especie.resx">
+      <DependentUpon>Especie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estoque.resx">
+      <DependentUpon>Estoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estoque_entrada.resx">
+      <DependentUpon>Estoque_entrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedor.resx">
+      <DependentUpon>Fornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_alimentação.resx">
+      <DependentUpon>frm_alimentação.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cardapio.resx">
+      <DependentUpon>frm_cardapio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConsultaAlimentacao.resx">
+      <DependentUpon>Frm_ConsultaAlimentacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMG.resx">
+      <DependentUpon>IMG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="img2.resx">
+      <DependentUpon>img2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="img3.resx">
+      <DependentUpon>img3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="incluir_produto.resx">
+      <DependentUpon>incluir_produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marca.resx">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_administrador.resx">
+      <DependentUpon>Menu_administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="novo_fornecedor .resx">
+      <DependentUpon>novo_fornecedor .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagar.resx">
+      <DependentUpon>Pagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parcelamento.resx">
+      <DependentUpon>Parcelamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedido_de_compra.resx">
+      <DependentUpon>Pedido_de_compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Peso.resx">
+      <DependentUpon>Peso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisa_plano_de_contas.resx">
+      <DependentUpon>Pesquisa_plano_de_contas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanoDeContas.resx">
+      <DependentUpon>PlanoDeContas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planodecontas_consulta.resx">
+      <DependentUpon>Planodecontas_consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="produtos.resx">
+      <DependentUpon>produtos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Recibo.resx">
+      <DependentUpon>Recibo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saida.resx">
+      <DependentUpon>saida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tamanho.resx">
+      <DependentUpon>Tamanho.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\,.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
